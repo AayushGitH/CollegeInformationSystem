@@ -1,0 +1,38 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand navbar-dark sticky-top col-11 mx-auto shadow-sm bg-white bg-body rounded">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-4 text-dark">AQue</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item" >
+          <a class="nav-link text-dark"  routerLink="home">Home</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  routerLink="reviews">Questions</a>
+        </li> 
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  routerLink="queans">Q/A</a>
+        </li> 
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  routerLink="events">Events</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  routerLink="info">Info</a>
+        </li>             
+      </ul>
+ 
+      <form class="d-flex" role="search">
+        <a class="nav-link text-dark "  routerLink="about">About</a>
+        <a class="nav-link text-dark "  routerLink="signup">Sign up</a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Router-outlet -->
+<div class="container-fluid" [@routeAnimations]="getState(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

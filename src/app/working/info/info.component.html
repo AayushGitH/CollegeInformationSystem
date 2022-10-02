@@ -1,0 +1,132 @@
+<div class="row">
+
+  <div class="my-4">
+    <span class="fs-1 mx-5">Our Staff</span>
+</div>
+
+<div class="my-4">
+    <span class="fs-1 mx-5">Students Enrolled</span>
+</div>
+
+<!-- Information Table -->
+<div class="row">
+  <div class="col-11 mx-auto">
+    <table class="table table-striped">
+      <thead>
+        <th class="text-center fs-4">Name</th>
+        <th class=" fs-4">Referal ID</th>
+        <th class=" fs-4">Course</th>
+        <th class=" fs-4">Action</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let info of infos;  let i = index">
+          <td class="text-center">{{info.iName}}</td>
+          <td>{{info.iReferalID}}</td>
+          <td>{{info.iCourse}}</td>
+          <td><button type="button" class="btn btn-primary  mt-2 mx-1" data-bs-toggle="modal" data-bs-target="#viewmodal">
+            View
+          </button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- View Modal -->
+<div class="modal fade " id="viewmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable ">
+    <div class="modal-content bg-primary">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <div class="row">
+        <div class="row col-11  w-50 h-50">
+            <img src="./assets/info.jpg" alt="">
+        </div>
+      </div>
+        <hr>
+        <div class="row">
+          <span>Name: Aayush Tiwari</span>
+        </div>
+        <div class="row">
+          <span>Address: Indore</span>
+          <span>City: Indore</span>
+        </div>
+        <div class="row">
+          <span>Age: 22</span>
+          <span>DOB: 15/09/2000</span>
+        </div>
+        <div class="row">
+          <span>Aadhar ID: 9826 9826 9826</span>
+        </div>
+        <div class="row">
+          <span>PAN No.: 123wer456w</span>
+        </div>
+        <div class="row">
+          <span>Nationaliy: Indian</span>
+        </div>
+        <div class="row">
+          <span>Experience: 5years</span>
+        </div>
+        <div class="row">
+          <span>Interest: Full Stack Software Development</span>
+        </div>
+        <div class="row">
+          <span>College ID: Aayush Tiwari</span>
+        </div>
+        <div class="row">
+          <span>Contact No.: 9826921884</span>
+        </div>
+        <div class="row">
+          <span>Library ID: 4865465asd</span>
+        </div>
+        <div class="row">
+          <span>Year: First</span>
+          <span>Semester: III</span>
+        </div>
+        <hr>
+        <span>Age: 22</span>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand navbar-dark sticky-end col-10 mx-auto shadow-lg bg-white bg-body rounded mb-3 mt-5">
+  <div class="container-fluid">
+    <span>copyright &copy; to AQue</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item" >
+          <a class="nav-link text-dark"  href="">Help Center</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Assessments</a>
+        </li> 
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Practices</a>
+        </li> 
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Events</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Privacy Policy</a>
+        </li>             
+      </ul>
+ 
+      <form class="d-flex" role="search">
+        <a class="nav-link text-dark "  href="">India</a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+</div>

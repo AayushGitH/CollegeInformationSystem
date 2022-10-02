@@ -1,0 +1,228 @@
+<div class="row">
+  
+  <!-- Create button -->
+<div class="row col-12 mx-5 mt-4">
+  <button type="button" class="btn btn-danger  mt-1 col-1 mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add question
+  </button>
+</div>
+
+<!-- Questions table -->
+<div class="row mt-3 mb-5">
+  <div class="col-12 mx-auto ">
+    <table class="table table-striped">
+      <thead>
+        <th class="text-center fs-4">Question ID</th>
+        <th class="text-center fs-4">Question Name</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let review of questions;  let i = index">
+          <td class="text-center">{{review.qID}}</td>
+          <td class="fw-bolder">{{review.qTopic}}<div><textarea id="w3review" class="bg-white text-dark"
+            name="w3review" rows="1" cols="100">{{review.qanswer}}
+            </textarea></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="text-hidden">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aspernatur libero quibusdam eos suscipit corporis
+    doloribus cupiditate sunt eveniet! Cumque aspernatur itaque blanditiis ipsa totam? Eius, eligendi architecto. Illo
+    saepe recusandae cupiditate libero, quos dolores? Tenetur natus repellat eveniet ipsum fugiat. Itaque pariatur eum
+    impedit placeat atque facere voluptatibus numquam omnis saepe unde deserunt inventore quo eveniet iure tenetur
+    temporibus, laboriosam quidem molestiae ea optio quos dolores. Commodi, id? Repudiandae dolorem ipsam laborum quod
+    sunt praesentium odit aperiam nostrum velit eligendi cum consequuntur nihil tempore molestiae, eaque distinctio esse
+    deserunt sequi et! Rerum commodi debitis quas eos minus libero praesentium. Perferendis quam sit, officiis veniam
+    unde laudantium odit, assumenda alias tenetur placeat fugit! Sed at quos et recusandae incidunt autem dolorum culpa
+    eveniet, cum quasi blanditiis iure hic quas voluptatum repellat ex? Dignissimos repellat debitis aut natus dolores
+    odit minima numquam explicabo eum sed quas a quisquam reprehenderit facilis cupiditate harum corrupti vero
+    perspiciatis pariatur laudantium, reiciendis fugit? Similique reiciendis voluptatem nostrum dolorum, deserunt
+    perferendis quos aliquid ipsam ducimus deleniti pariatur tenetur molestias, porro voluptates ullam cumque incidunt
+    explicabo! Est sint velit hic modi cupiditate magnam voluptates, aliquam vero, natus distinctio, eius nostrum
+    necessitatibus tempora possimus non illo quidem? Sint corporis aliquam quidem harum amet in minus quaerat similique!
+    Ex molestias eligendi magni recusandae doloribus quos vero eius atque nulla, assumenda laborum inventore nemo
+    laudantium? Harum sed cum ipsa cumque! Doloremque sequi possimus autem dolores est? Molestias inventore enim iste
+    obcaecati repudiandae, vel necessitatibus, voluptas vitae doloribus in autem sunt ab. Maiores est dolorum ex ab
+    perspiciatis iusto doloribus nulla! Sit voluptatem cumque cum sapiente consequuntur aliquam maxime! Vero, cupiditate
+    libero, animi natus repellendus accusamus fugiat in minima blanditiis quos modi voluptate repellat incidunt nisi
+    quis sunt sapiente aut cum! Aut dolore et delectus incidunt dolorem dolores repellat nam eius.</p>
+</div>
+
+<!-- Q/A related buttons -->
+<div class="row col-11 bg-white shadow-lg mx-auto">
+  <div class="row col-9 mx-auto mb-5 mt-5">
+    
+    <!-- I-row -->
+    <div class="row">
+      
+      <!-- DS -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/data-structures/" role="button" target="_blank">
+          Q/A related DS</a>
+      </div>
+      
+      <!-- DBMS -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/dbms/" role="button" target="_blank"> Q/A related
+          DBMS</a>
+      </div>
+
+      <!-- OS -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/operating-systems/" role="button"
+        target="_blank"> Q/A related OS</a>
+      </div>
+    </div>
+    
+    <!-- II-row -->
+    <div class="row">
+      
+      <!-- COA -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger"
+        href="https://www.geeksforgeeks.org/computer-organization-and-architecture-tutorials/" role="button"
+        target="_blank"> Q/A related COA</a>
+      </div>
+      
+      <!-- Discrete-I -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/discrete-mathematics-tutorial/" role="button"
+        target="_blank"> Q/A related Discrete-I</a>
+      </div>
+
+      <!-- Dicrete-II -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/discrete-mathematics-tutorial/" role="button"
+          target="_blank"> Q/A related Discrete-II</a>
+      </div>
+    </div>
+    
+    <!-- III-row -->
+    <div class="row">
+      
+      <!-- Software Engineering -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/software-engineering/" role="button"
+        target="_blank"> Q/A related Software Engineering</a>
+      </div>
+      
+      <!-- Computer Networks -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/computer-network-tutorials/" role="button"
+          target="_blank"> Q/A related Computer Networks</a>
+        </div>
+        
+      <!-- Algorithms -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" role="button"
+          target="_blank"> Q/A related Algorithms</a>
+      </div>
+    </div>
+
+    <!-- IV-row -->
+    <div class="row">
+      
+      <!-- C/C++ -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/c-plus-plus/" role="button" target="_blank"> Q/A
+          related C/C++</a>
+      </div>
+      
+      <!-- Java -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/java/" role="button" target="_blank"> Q/A related
+          Java</a>
+      </div>
+      
+      <!-- Python -->
+      <div class="row col-4 mb-2 mt-2 mx-auto">
+        <a class="btn btn-danger" href="https://www.geeksforgeeks.org/python-programming-language/" role="button"
+        target="_blank"> Q/A related Python</a>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="row mx-auto text-center text-white"><p>&copy; Copyright reserved to AQue</p></div>
+</div>
+
+<!-- Footer -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand navbar-dark sticky-end col-10 mx-auto shadow-lg bg-white bg-body rounded mb-3 mt-5">
+  <div class="container-fluid">
+    <span>copyright &copy; to AQue</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item" >
+          <a class="nav-link text-dark"  href="">Help Center</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Assessments</a>
+        </li> 
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Practices</a>
+        </li> 
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Events</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link text-dark "  href="">Privacy Policy</a>
+        </li>             
+      </ul>
+ 
+      <form class="d-flex" role="search">
+        <a class="nav-link text-dark "  href="">India</a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Create Question Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Question</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group row">
+          <label for="txtNewqID" class="col-sm-4 col-form-label">Question ID</label>
+          <div class="col-sm-8">
+            <input type="number" id="txtNewqID" style="width:100px" class="form-control"
+            placeholder="Question ID" name="qID" [(ngModel)]="newQuestion.qID">
+          </div>
+        </div>
+        
+        <div class="form-group row">
+          <label for="txtNewqTopic" class="col-sm-4 col-form-label">Question Topic</label>
+          <div class="col-sm-8">
+            <input type="text" id="txtNewqTopic" style="width:100px" class="form-control"
+            placeholder="Question Topic" name="qTopic" [(ngModel)]="newQuestion.qTopic">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="txtNewQuestionqanswer" class="col-sm-4 col-form-label">Question Topic</label>
+          <div class="col-sm-8">
+            <input type="text" id="txtNewQuestionqanswer" style="width:100px" class="form-control"
+            placeholder="Question qanswer" name="Questionqanswer" [(ngModel)]="newQuestion.qanswer">
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="onSaveClick()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
